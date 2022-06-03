@@ -1,0 +1,177 @@
+[
+  {
+    "id": "629a5145cae838a0c3802de6",
+    "name": "Ecratic",
+    "numbeEmployees": 255,
+    "country": "Puerto Rico",
+    "category": "Setor de Tecnologia"
+  },
+  {
+    "id": "629a5145e0f6a7c78fc4d89c",
+    "name": "Bulljuice",
+    "numbeEmployees": 271,
+    "country": "Turkey",
+    "category": "Setor de Aviação"
+  },
+  {
+    "id": "629a5145bbe4e2ca094806c9",
+    "name": "Newcube",
+    "numbeEmployees": 164,
+    "country": "Bermuda",
+    "category": "Setor de Aviação"
+  },
+  {
+    "id": "629a5145d4a983fbc0dbf541",
+    "name": "Sequitur",
+    "numbeEmployees": 2,
+    "country": "Sudan",
+    "category": "Setor de Transporte"
+  },
+  {
+    "id": "629a5145132bb4357a50c29e",
+    "name": "Konnect",
+    "numbeEmployees": 299,
+    "country": "Zambia",
+    "category": "Setor de Pecuária"
+  },
+  {
+    "id": "629a514514852cc54b2aba71",
+    "name": "Limage",
+    "numbeEmployees": 323,
+    "country": "US Minor Outlying Islands",
+    "category": "Setor de Aviação"
+  },
+  {
+    "id": "629a5145bd36c2906da5f35b",
+    "name": "Concility",
+    "numbeEmployees": 256,
+    "country": "Greece",
+    "category": "Setor de Tecnologia"
+  },
+  {
+    "id": "629a51456d986392d7776d62",
+    "name": "Bullzone",
+    "numbeEmployees": 99,
+    "country": "Panama",
+    "category": "Setor de Pecuária"
+  },
+  {
+    "id": "629a51459937f11ca88396f7",
+    "name": "Daisu",
+    "numbeEmployees": 192,
+    "country": "French Southern Territories",
+    "category": "Setor de Tecnologia"
+  },
+  {
+    "id": "629a51456250baba3e3500b2",
+    "name": "Geoforma",
+    "numbeEmployees": 405,
+    "country": "Suriname",
+    "category": "Setor de Aviação"
+  },
+  {
+    "id": "629a514572095f49652a8d5e",
+    "name": "Isostream",
+    "numbeEmployees": 48,
+    "country": "Costa Rica",
+    "category": "Setor de Transporte"
+  },
+  {
+    "id": "629a51450b9b89010b08d2b9",
+    "name": "Ontagene",
+    "numbeEmployees": 58,
+    "country": "Saint Vincent and The Grenadines",
+    "category": "Setor de Transporte"
+  },
+  {
+    "id": "629a5145854db4c97ffcab2c",
+    "name": "Sonique",
+    "numbeEmployees": 387,
+    "country": "Cuba",
+    "category": "Setor de Transporte"
+  },
+  {
+    "id": "629a5145bc1da66fdcfe4a24",
+    "name": "Geeknet",
+    "numbeEmployees": 40,
+    "country": "Ethiopia",
+    "category": "Setor de Transporte"
+  },
+  {
+    "id": "629a5145f92eb0c48e0ae591",
+    "name": "Tri@Tribalog",
+    "numbeEmployees": 85,
+    "country": "Mali",
+    "category": "Setor de Transporte"
+  },
+  {
+    "id": "629a5145ebd812f2f27fb7d8",
+    "name": "Centuria",
+    "numbeEmployees": 92,
+    "country": "Dominican Republic",
+    "category": "Setor de Marketing"
+  },
+  {
+    "id": "629a5145a61282137d31b5a1",
+    "name": "Pathways",
+    "numbeEmployees": 25,
+    "country": "Saint Lucia",
+    "category": "Setor de Aviação"
+  },
+  {
+    "id": "629a5145106cd258a922a1ca",
+    "name": "Gology",
+    "numbeEmployees": 334,
+    "country": "Russian Federation",
+    "category": "Setor de Aviação"
+  },
+  {
+    "id": "629a51454a7c6810d1bade1e",
+    "name": "Velos",
+    "numbeEmployees": 123,
+    "country": "Mayotte",
+    "category": "Setor de Marketing"
+  },
+  {
+    "id": "629a51458ac6952a55e146e4",
+    "name": "Earthwax",
+    "numbeEmployees": 181,
+    "country": "Syria",
+    "category": "Setor de Tecnologia"
+  },
+  {
+    "id": "629a5145bc9aea1c8c9605e2",
+    "name": "Exozent",
+    "numbeEmployees": 135,
+    "country": "Seychelles",
+    "category": "Setor de Tecnologia"
+  },
+  {
+    "id": "629a51453139b503082582f2",
+    "name": "Handshake",
+    "numbeEmployees": 102,
+    "country": "New Caledonia",
+    "category": "Setor de Pecuária"
+  },
+  {
+    "id": "629a51458f0e7eb859174ca7",
+    "name": "Quintity",
+    "numbeEmployees": 154,
+    "country": "Bahamas",
+    "category": "Setor de Transporte"
+  },
+  {
+    "id": "629a5145ad20f2fd7554d1c2",
+    "name": "Olucore",
+    "numbeEmployees": 51,
+    "country": "Guinea",
+    "category": "Setor de Marketing"
+  },
+  {
+    "id": "629a5145c91fdbb1ba4af243",
+    "name": "Datagene",
+    "numbeEmployees": 76,
+    "country": "Sweden",
+    "category": "Setor de Pecuária"
+  }
+]
