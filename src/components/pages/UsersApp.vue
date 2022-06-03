@@ -17,9 +17,9 @@
     <div class="mt-8 flex flex-col">
       <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
-          <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
-            <table class="min-w-full divide-y divide-gray-300">
-              <thead class="bg-gray-50">
+          <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg md:max-h-[85vh] md:overflow-y-auto side__infos">
+            <table class="min-w-full divide-y divide-gray-300 relative">
+              <thead class="bg-gray-50 sticky top-0">
                 <tr>
                   <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">Nome</th>
                   <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Empresa</th>
@@ -32,15 +32,18 @@
                 </tr>
               </thead>
               <tbody class="divide-y divide-gray-200 bg-white">
-                <tr v-for="person in users" :key="person.email">
+                <tr v-for="(person, index) in users" :key="person.email">
                   <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">{{ person.name }}</td>
                   <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ person.company }}</td>
                   <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ person.email }}</td>
                   <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 flex flex-col overflow-y-auto max-h-14">{{ person.telefone[0] }}</td>
                   <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ person.data }}</td>
-                  <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                    <a href="#" class="text-indigo-600 hover:text-indigo-900"
-                      >Editar<span class="sr-only">, {{ person.name }}</span></a
+                  <td class="flex justify-end gap-5 relative whitespace-nowrap py-4 pl-3 pr-4 text-sm font-medium sm:pr-6">
+                    <button href="#" class="text-indigo-600 hover:text-indigo-900"
+                      >Editar<span class="sr-only">, {{ person.name }}</span></button
+                    >
+                    <button href="#" @click="removeItemFromList(index, users)" class="text-red-500 bg-gray-100 hover:bg-gray-200 p-1 rounded-md"
+                      ><TrashIcon class="w-5 h-5" /><span class="sr-only">, Delete user {{ person.name }}</span></button
                     >
                   </td>
                 </tr>
@@ -121,7 +124,7 @@
                     <li v-for="(phone, index) in previewPhoneList" :key="index" class="mb-3 text-sm border border-transparent hover:border-gray-100 pl-2 rounded-md">
                       <div class="flex items-center justify-between">
                         <span>{{ index + 1 }}) {{ phone }}</span>
-                        <button @click="removeItemFromPreviewList(index)" class="bg-gray-100 hover:bg-gray-200 rounded-md p-2">
+                        <button @click="removeItemFromList(index, previewPhoneList)" class="bg-gray-100 hover:bg-gray-200 rounded-md p-2">
                           <XIcon class="w-5 h-5 text-red-500" />
                         </button>
                       </div>
@@ -163,7 +166,7 @@
 
 <script setup>
 import { ref } from '@vue/reactivity';
-import { PlusIcon, XIcon } from '@heroicons/vue/outline';
+import { PlusIcon, XIcon, TrashIcon } from '@heroicons/vue/outline';
 import {
   TransitionRoot,
   TransitionChild,
@@ -187,7 +190,7 @@ const previewPhoneList = ref([])
 
 const newUserInfos = ref({});
 
-const isOpen = ref(true);
+const isOpen = ref(false);
 
 function closeModal() {
   isOpen.value = false
@@ -206,8 +209,8 @@ function addNumberToPreviewList() {
   else console.log('Fill number field')
 }
 
-function removeItemFromPreviewList(index) {
-  previewPhoneList.value.splice(index, 1);
+function removeItemFromList(index, list) {
+  list.splice(index, 1);
 }
 
 function addNewUser() {

@@ -54,7 +54,7 @@
         <div class="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
           <div class="items-center px-4">
             <router-link :to="{name: 'home'}">
-              <img class="h-16 w-auto mx-auto" src="../assets/einov.jpg" alt="E-Inov desafio Vue.js" />
+              <img class="h-10 w-auto mx-auto" src="../assets/einov.jpg" alt="E-Inov desafio Vue.js" loading="lazy"/>
             </router-link>
             
           </div>
@@ -100,12 +100,14 @@ import {
   HomeIcon,
   MenuIcon,
   UsersIcon,
+  OfficeBuildingIcon,
   XIcon,
 } from '@heroicons/vue/outline'
 
 const navigation = [
   { name: 'Home', router: {name: 'home'}, icon: HomeIcon, current: true },
   { name: 'Usuários', router: {name: 'users'}, icon: UsersIcon, current: false },
+  { name: 'Empresas', router: {name: 'companies'}, icon: OfficeBuildingIcon, current: false },
 ]
 
 const sidebarOpen = ref(false)
@@ -113,9 +115,30 @@ const sidebarOpen = ref(false)
 
 <style>
 .link-active {
-
     background-color: #e9eaeb;
     color: #4a5568;
     border-radius: 4px;
 }
+
+/* width */
+  .side__infos::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  .side__infos::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px rgba(79, 70, 229, 0.2);
+    border-radius: 8px;
+  }
+
+  /* Handle */
+  .side__infos::-webkit-scrollbar-thumb {
+    background: rgba(79, 70, 229, 0.2);
+    border-radius: 8px;
+  }
+
+  /* Handle on hover */
+  .side__infos::-webkit-scrollbar-thumb:hover {
+    background: rgba(79, 70, 229, 0.5);
+  }
 </style>
