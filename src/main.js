@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router';
+import { createPinia } from 'pinia';
 
 import './css/app.css';
 
@@ -8,17 +9,17 @@ const routes = [
     { 
         path: '/', 
         name: 'home', 
-        component: () => import('./components/pages/HomeApp.vue'),
+        component: () => import('./pages/HomeApp.vue'),
     },
     { 
         path: '/users', 
         name: 'users', 
-        component: () => import('./components/pages/UsersApp.vue') 
+        component: () => import('./pages/UsersApp.vue') 
     },
     {
         path: '/companies',
         name: 'companies',
-        component: () => import('./components/pages/CompaniesApp.vue') 
+        component: () => import('./pages/CompaniesApp.vue') 
     }
   ]
 
@@ -28,4 +29,4 @@ const router = createRouter({
     linkActiveClass: 'link-active',
 })
 
-createApp(App).use(router).mount('#app')
+createApp(App).use(createPinia()).use(router).mount('#app')

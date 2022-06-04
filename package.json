@@ -12,6 +12,7 @@
     "@heroicons/vue": "^1.0.6",
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
+    "pinia": "^2.0.14",
     "vue": "^3.2.13",
     "vue-router": "^4.0.15"
   },
@@ -32,6 +33,10 @@
     "env": {
       "node": true
     },
+    "globals": {
+      "defineProps": "readonly",
+      "defineEmits": "readonly"
+    },
     "extends": [
       "plugin:vue/vue3-essential",
       "eslint:recommended"
@@ -39,7 +44,9 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "vue/setup-compiler-macros": 0
+    }
   },
   "browserslist": [
     "> 1%",

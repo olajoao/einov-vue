@@ -10,7 +10,7 @@
     <div class="mt-8 flex flex-col border">
       <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
-          <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg md:max-h-[85vh] md:overflow-y-auto side__infos">
+          <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg md:max-h-[75vh] 2xl:max-h-[85vh] md:overflow-y-auto side__infos">
             <table class="min-w-full divide-y divide-gray-300 relative">
               <thead class="bg-gray-50 sticky top-0">
                 <tr>
