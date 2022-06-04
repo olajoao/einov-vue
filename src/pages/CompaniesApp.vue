@@ -21,7 +21,7 @@
                 </tr>
               </thead>
               <tbody class="divide-y divide-gray-200 bg-white">
-                <tr v-for="company in companies" :key="company.id">
+                <tr v-for="company in companies" :key="company.id" class="hover:bg-gray-100">
                   <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">{{ company.name }}</td>
                   <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ company.numbeEmployees }}</td>
                   <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ company.country }}</td>
